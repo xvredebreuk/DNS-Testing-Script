@@ -72,7 +72,7 @@ if ($OutputPath -and -not (Test-Path $OutputPath -IsValid)) {
 # Global variables
 $Script:DNSResults = [System.Collections.Concurrent.ConcurrentBag[PSCustomObject]]::new()
 $Script:ThreatSources = @{
-    "zonefiles.io" = "https://zonefiles.io/f/compromised/domains/live/"
+    "adguardteam.github.io" = "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt"
     "romainmarcoux_malicious_domains" = "https://raw.githubusercontent.com/romainmarcoux/malicious-domains/refs/heads/main/full-domains-aa.txt"
     "botvrij.eu" = "http://www.botvrij.eu/data/ioclist.domain.raw"
     "openphish" = "https://raw.githubusercontent.com/openphish/public_feed/refs/heads/main/feed.txt"
